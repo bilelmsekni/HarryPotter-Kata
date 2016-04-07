@@ -69,7 +69,7 @@ namespace HarryPotter
         [NUnit.Framework.CategoryAttribute("V5")]
         [NUnit.Framework.TestCaseAttribute("1", "0", "0", "0", "0", "8.0", new string[0])]
         [NUnit.Framework.TestCaseAttribute("1", "1", "0", "0", "0", "15.2", new string[0])]
-        public virtual void EstimateDifferentPurchaseScenarios(string nbofBooks_1, string nbofBooks_2, string nbofBooks_3, string nbofBooks_4, string nbofBooks_5, string totalPrice, string[] exampleTags)
+        public virtual void EstimateDifferentPurchaseScenarios(string nbOfBooks_1, string nbOfBooks_2, string nbOfBooks_3, string nbOfBooks_4, string nbOfBooks_5, string totalPrice, string[] exampleTags)
         {
             string[] @__tags = new string[] {
                     "V5"};
@@ -83,15 +83,15 @@ this.ScenarioSetup(scenarioInfo);
 #line 9
  testRunner.Given("a basket", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 10
- testRunner.When("I bought <nbOfBooks_1> books of volume 1", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When(string.Format("I bought {0} books of volume 1", nbOfBooks_1), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 11
- testRunner.And("I bought <nbOfBooks_2> books of volume 2", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And(string.Format("I bought {0} books of volume 2", nbOfBooks_2), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 12
- testRunner.And("I bought <nbOfBooks_3> books of volume 3", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And(string.Format("I bought {0} books of volume 3", nbOfBooks_3), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 13
- testRunner.And("I bought <nbOfBooks_4> books of volume 4", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And(string.Format("I bought {0} books of volume 4", nbOfBooks_4), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 14
- testRunner.And("I bought <nbOfBooks_5> books of volume 5", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And(string.Format("I bought {0} books of volume 5", nbOfBooks_5), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 15
  testRunner.Then(string.Format("the total is {0} euro", totalPrice), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden

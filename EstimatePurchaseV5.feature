@@ -15,7 +15,7 @@ Scenario Outline: Estimate different purchase scenarios
 	Then the total is <totalPrice> euro
 
 	Examples:
-	| nbofBooks_1 | nbofBooks_2 | nbofBooks_3 | nbofBooks_4 | nbofBooks_5 | totalPrice |
+	| nbOfBooks_1 | nbOfBooks_2 | nbOfBooks_3 | nbOfBooks_4 | nbOfBooks_5 | totalPrice |
 	| 1           | 0           | 0           | 0           | 0           | 8.0		   |
 	| 1           | 1           | 0           | 0           | 0           | 15.2       |
 	
