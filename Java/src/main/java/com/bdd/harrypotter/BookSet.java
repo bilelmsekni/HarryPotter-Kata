@@ -11,7 +11,7 @@ public class BookSet {
     {
     	for(Book book:_books)
     	{
-    		if (book.Volume == newBook.Volume)
+    		if (book.volume == newBook.volume)
     			return true;
     	}
         return false;

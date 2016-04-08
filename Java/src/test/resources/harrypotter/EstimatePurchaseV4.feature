@@ -10,7 +10,7 @@ Scenario: Estimate the value of three books of different volumes
 	| 8        | 1      |
 	| 8         | 2      |
 	| 8         | 2      |
-	Then the total is 23.199999999999999 €
+	Then the total is 23.2 €
 
 Scenario: Estimate the value of 5 books forming 2 sets of different volumes
 	Given a basket
@@ -21,7 +21,7 @@ Scenario: Estimate the value of 5 books forming 2 sets of different volumes
 	| 8         | 3      |
 	| 8         | 2      |
 	| 8         | 3      |
-	Then the total is 36.799999999999997 €
+	Then the total is 36.8 €
 
 Scenario: Estimate the value of 5 forming 3 sets of different volumes
 	Given a basket
@@ -32,4 +32,4 @@ Scenario: Estimate the value of 5 forming 3 sets of different volumes
 	| 8         | 1      |
 	| 8         | 2      |
 	| 8         | 1      |
-	Then the total is 38.399999999999999 €
+	Then the total is 38.4 €

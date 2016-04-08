@@ -11,11 +11,11 @@ public class EstimatePurchaseV1 {
 	@Given("^A book$")
 	public void A_book() throws Throwable {
 		book = new Book();
-		book.Price = 8;
+		book.price = 8;
 	}
 
 	@Then("^its price is (\\d+) €$")
 	public void its_price_is_€(double expectedPrice) throws Throwable {
-		Assert.assertEquals(expectedPrice, book.Price, 0);
+		Assert.assertEquals(expectedPrice, book.price, 0);
 	}	
 }

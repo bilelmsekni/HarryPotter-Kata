@@ -9,14 +9,17 @@ import cucumber.api.java.en.When;
 public class EstimatePurchaseV2 {
 	
 	Basket _basket;
-	EstimatePurchaseV2(Basket basket)
+	public EstimatePurchaseV2(Basket basket)
 	{
+		//Dependency Injection thanks to picoContainer
 		_basket = basket;
 	}
 	
 	@Given("^a basket$")
 	public void a_basket() throws Throwable {
-		_basket = new Basket();
+		//This will override the injected variable in the constructor
+		//Use with precaution
+		//_basket = new Basket();
 	}
 
 	@When("^I buy (\\d+) books$")
@@ -24,15 +27,15 @@ public class EstimatePurchaseV2 {
         for (int i = 0; i < nbOfBooks; i++)
         {
         	Book book = new Book();
-        	book.Price = 8;
+        	book.price = 8;
             _basket.AddBook(book);
         }
 	}
 
 	@Then("^the total is (\\d+\\.\\d+|\\d+) €$")
 	public void the_total_is_€(double total) throws Throwable {
-		
-		Assert.assertEquals(total, _basket.EstimateBasket(), 0);
+		double calc = _basket.EstimateBasket();
+		Assert.assertEquals(total, calc, 0);
 		
 	}
 	
@@ -41,8 +44,8 @@ public class EstimatePurchaseV2 {
         for (int i = 0; i < nbOfBooks; i++)
         {
         	Book book = new Book();
-        	book.Price = 8;
-        	book.Volume = volumeNumber;
+        	book.price = 8;
+        	book.volume = volumeNumber;
             _basket.AddBook(book);
         }
 	}

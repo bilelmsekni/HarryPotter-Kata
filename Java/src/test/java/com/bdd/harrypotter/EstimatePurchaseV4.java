@@ -1,16 +1,13 @@
 package com.bdd.harrypotter;
 
-import java.lang.reflect.Type;
 import java.util.List;
-
 import cucumber.api.DataTable;
-import cucumber.api.java.en.Given;
 import cucumber.api.java.en.When;
 
 public class EstimatePurchaseV4 {
 
 	Basket _basket;
-	EstimatePurchaseV4(Basket basket)
+	public EstimatePurchaseV4(Basket basket)
 	{
 		_basket = basket;
 	}

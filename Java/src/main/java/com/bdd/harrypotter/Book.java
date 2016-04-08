@@ -2,7 +2,7 @@ package com.bdd.harrypotter;
 
 public class Book {
 
-	public double Price;
-	public int Volume;
+	public double price;
+	public int volume;
 
 }
