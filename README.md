@@ -14,7 +14,7 @@ Table of Contents
   5. Contacts
   6. Credits
 
-1. Preparing your machine
+Preparing your machine
 ===============
 
 1.1. Java
@@ -60,7 +60,7 @@ Table of Contents
    
    Install-Package SpecFlow
    
-   2. Harry Potter Kata
+Harry Potter Kata
 ===============
 
 You would like to buy the famous Harry Potter books but you have little money in your pocket 
@@ -88,7 +88,7 @@ Examples:
 	And I buy 1 book of volume 2
 	Then the total is 15.2 euros
 	
-   3. Understanding the solution
+Understanding the solution
 ===============
 
 - EstimatePurchaseV1: Create your first feature, generate the steps and check if the test runs ok.
@@ -98,7 +98,7 @@ Examples:
 - EstimatePurchaseV5: Use the scenario outline to make a more clear concept and reduce code amount.
 - Note: The .Net implementation is using scopes to separate between steps where Java is using dependency injection to share the basket values.
 
-   4. Licensing
+Licensing
 ===============
 
 HarryPotter KataBDD is licensed under a Creative Commons Attribution 3.0 Unported License.
@@ -107,12 +107,12 @@ HarryPotter KataBDD is licensed under a Creative Commons Attribution 3.0 Unporte
 
 To view a copy of this license, visit [ http://creativecommons.org/licenses/by/3.0/deed.en_US ].
 
-   5. Contacts
+Contacts
 ===============
 
 Bilel Msekni (msekni.bilel@gmail.com)
 
-   6. Credits
+Credits
 ===============
 
 Thanks Pierre Gillon for the subject of this Kata: http://www.pierregillon.com/2013/10/bdd-lexemple-du-kata-potter.html
